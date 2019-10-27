@@ -1,0 +1,11 @@
+<a [routerLink]="['/vehicles']">Go Back to Vehicles Index</a>
+<div *ngIf="vehicleSelected">
+Name : {{vehicleSelected.name}} <br/>
+Model : {{vehicleSelected.model}} <br/>
+Manufacturer : {{vehicleSelected.manufacturer}} <br/>
+Cost : {{vehicleSelected.cost_in_credits}} <br/> 
+Length : {{vehicleSelected.length}} <br/>
+Crew : {{vehicleSelected.crew}} <br/>
+Cargo Capacity : {{vehicleSelected.cargo_capacity}} <br/>
+Vehicle Class : {{vehicleSelected.vehicle_class}} <br/>
+</div>

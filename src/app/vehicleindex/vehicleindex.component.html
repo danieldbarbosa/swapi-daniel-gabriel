@@ -1,0 +1,10 @@
+<a [routerLink]="['/']">Go back to Index</a> 
+
+<ol>
+    <li *ngFor="let vehicle of vehicles;">
+      <a [routerLink]="['/vehicles', vehicle.id]">{{vehicle.name}}</a> 
+    </li>
+</ol>
+
+
+<button class="btn btn-primary" (click)="getVehicles()" *ngIf="vehicles">Load page</button>

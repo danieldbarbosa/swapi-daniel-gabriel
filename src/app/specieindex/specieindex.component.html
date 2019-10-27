@@ -1,0 +1,8 @@
+<a [routerLink]="['/']">Go back to Index</a> 
+<ol>
+    <li *ngFor="let specie of species;">
+      <a [routerLink]="['/species', specie.id]">{{specie.name}}</a> 
+    </li>
+</ol>
+
+<button class="btn btn-primary" (click)="getSpecies()" *ngIf="species">Load page</button>

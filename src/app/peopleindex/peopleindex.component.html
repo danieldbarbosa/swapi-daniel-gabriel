@@ -1,0 +1,11 @@
+<a [routerLink]="['/']">Go back to Index</a> 
+
+<div *ngIf="people.length==0">Loading</div>
+<ol>
+    <li *ngFor="let person of people;">
+      <a [routerLink]="['/people', person.id]">{{person.name}}</a> 
+    </li>
+</ol>
+
+
+<button class="btn btn-primary" (click)="getPeople()" *ngIf="people">Load page</button>

@@ -1,0 +1,8 @@
+<a [routerLink]="['/films']">Go Back to Films Index</a>
+<div *ngIf="filmSelected">
+Title : {{filmSelected.title}} <br/>
+Episode id: {{filmSelected.episode_id}}<br/>
+Opening Crawl: {{filmSelected.opening_crawl}}<br/>
+Director: {{filmSelected.director}}<br/>
+Producer: {{filmSelected.producer}}<br/>
+</div>

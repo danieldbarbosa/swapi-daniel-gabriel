@@ -1,0 +1,10 @@
+<a [routerLink]="['/']">Go back to Index</a> 
+
+<ol>
+    <li *ngFor="let starship of starships;">
+      <a [routerLink]="['/starships', starship.id]">{{starship.name}}</a> 
+    </li>
+</ol>
+
+
+<button class="btn btn-primary" (click)="getStarships()" *ngIf="starships">Load page</button>

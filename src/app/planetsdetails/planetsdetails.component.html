@@ -1,0 +1,11 @@
+<a [routerLink]="['/planets']">Go Back to Planets Index</a>
+<div *ngIf="planetSelected">
+Name : {{planetSelected.name}} <br/>
+Diameter : {{planetSelected.diameter}} <br/> 
+Gravity : {{planetSelected.gravity}} <br/>
+Population : {{planetSelected.population}} <br/>
+Climate : {{planetSelected.climate}} <br/>
+Terrain : {{planetSelected.terrain}} <br/>
+Surface Water : {{planetSelected.surface_water}} <br/>
+</div>
+

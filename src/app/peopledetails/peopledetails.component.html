@@ -1,0 +1,8 @@
+
+<a [routerLink]="['/people']">Go Back to People Index</a>
+<div *ngIf="personSelected">
+Name: {{personSelected.name}} <br/>
+Height: {{personSelected.height}} <br/>
+Mass: {{personSelected.mass}} <br/>
+Gender : {{personSelected.gender}} <br/>
+</div>

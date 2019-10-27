@@ -1,0 +1,15 @@
+<a [routerLink]="['/starships']">Go Back to Starships Index</a>
+<div *ngIf="starshipSelected">
+Name : {{starshipSelected.name}} <br/>
+Model : {{starshipSelected.model}} <br/>
+Manufacturer : {{starshipSelected.manufacturer}} <br/>
+Cost : {{starshipSelected.cost_in_credits}} <br/> 
+Length : {{starshipSelected.length}} <br/>
+Crew : {{starshipSelected.crew}} <br/>
+Pssagers: {{starshipSelected.crew}} <br/>
+Max Atmosphering Speed: {{starshipSelected.max_atmosphering_speed}} <br/>
+Hyperdrive Rating: {{starshipSelected.  hyperdrive_rating}} <br/>
+MLGT: {{starshipSelected.MGLT}} <br/>
+Cargo Capacity: {{starshipSelected.cargo_capacity}} <br/>
+Consumables: {{starshipSelected.consumables}} <br/>
+</div>

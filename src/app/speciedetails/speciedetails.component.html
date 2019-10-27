@@ -1,0 +1,10 @@
+<a [routerLink]="['/species']">Go Back to Species Index</a>
+<div *ngIf="specieSelected">
+Name : {{specieSelected.name}} <br/>
+Designation: {{specieSelected.designation}}<br/>
+Average Hight: {{specieSelected.average_height}}<br/>
+Average Lifespan: {{specieSelected.average_lifespan}}<br/>
+Eye Colors: {{specieSelected.eye_colors}}<br/>
+Skin Colors: {{specieSelected.skin_colors}}<br/>
+Language: {{specieSelected.language}}<br/>
+</div>

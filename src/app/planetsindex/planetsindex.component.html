@@ -1,0 +1,8 @@
+<a [routerLink]="['/']">Go back to Index</a> 
+
+<ol>
+    <li *ngFor="let planet of planets;">
+      <a [routerLink]="['/planets', planet.id]">{{planet.name}}</a> 
+    </li>
+</ol>
+<button class="btn btn-primary" (click)="getPlanets()" *ngIf="planets">Load page</button>
